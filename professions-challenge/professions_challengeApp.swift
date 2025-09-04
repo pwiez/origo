@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import GoogleMaps
 import MijickCamera
 
 class AppDelegate: NSObject, UIApplicationDelegate, MApplicationDelegate {
@@ -16,6 +17,12 @@ class AppDelegate: NSObject, UIApplicationDelegate, MApplicationDelegate {
 
 @main
 struct professions_challengeApp: App {
+    let googleMapsAPIKey = "REMOVED_GOOGLE_MAPS_API_KEY"
+
+    init() {
+        GMSServices.provideAPIKey(googleMapsAPIKey)
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
