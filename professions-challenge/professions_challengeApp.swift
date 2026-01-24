@@ -17,7 +17,7 @@ class AppDelegate: NSObject, UIApplicationDelegate, MApplicationDelegate {
 
 @main
 struct professions_challengeApp: App {
-    let googleMapsAPIKey = "REMOVED_GOOGLE_MAPS_API_KEY"
+    //let googleMapsAPIKey =
     
     init() {
         GMSServices.provideAPIKey(googleMapsAPIKey)
